@@ -13,7 +13,8 @@ medirán en la Ola 1.
 
 | Herramienta | Qué hace | Costo y licencia | Notas |
 |---|---|---|---|
-| [Clipspeed](https://www.clipspeed.ai/) | Detecta y corta clips desde videos largos; subtítulos; publicación automática | De pago: US$19, 39 o 99 al mes; prueba de 3 días por US$1. Sin marca de agua desde US$39 (según su propio sitio, con contradicciones) | Choca con el presupuesto de US$0. Alternativa gratuita: ffmpeg + Whisper |
+| **ffmpeg + Whisper** (en uso) | ffmpeg corta, reencuadra a vertical y quema subtítulos; Whisper transcribe el audio con marcas de tiempo | Gratis y de código abierto; corren en el computador local | Opción elegida por ahora. No detecta sola los mejores momentos: los elige un socio o un modelo de lenguaje sobre la transcripción |
+| [Clipspeed](https://www.clipspeed.ai/) | Detecta y corta clips desde videos largos; subtítulos; publicación automática | De pago: US$19, 39 o 99 al mes; prueba de 3 días por US$1. Sin marca de agua desde US$39 (según su propio sitio, con contradicciones) | En reserva: se reevalúa cuando haya ingresos que lo paguen |
 
 ### Motor de composición
 
@@ -56,8 +57,8 @@ medirán en la Ola 1.
 
 | Tipo de pieza | Herramienta principal | Apoyo | Esfuerzo |
 |---|---|---|---|
-| Clip de stream subtitulado | Clipspeed, o ffmpeg + Whisper | HyperFrames para título o marco | Bajo |
-| Clip con contexto (título, dato, reacción escrita) | HyperFrames | Clipspeed para el corte | Bajo–medio |
+| Clip de stream subtitulado | ffmpeg + Whisper | HyperFrames para título o marco | Bajo–medio |
+| Clip con contexto (título, dato, reacción escrita) | HyperFrames | ffmpeg + Whisper para el corte | Medio |
 | Explicativo con gráficos 2D y texto animado | HyperFrames | Lemo Opuscar para el estilo; bibliotecas de prompts | Medio |
 | Datos, rankings, comparativas (finanzas, deportes) | HyperFrames | librosa si va al ritmo de la música | Medio |
 | Promocional o reseña de producto | Video ShotCraft | librosa | Medio |
@@ -93,12 +94,13 @@ medirán en la Ola 1.
   confirmar en su licencia.
 - **Equipo.** HyperFrames y Blender renderizan en el computador local: el tiempo de render
   cuenta como tiempo de producción.
-- **Clipspeed.** Decisión pendiente (ver `00-decisiones-fundacionales.md`, tensión 3).
+- **Clipspeed.** Fuera del flujo por ahora; se trabaja solo con opciones gratuitas.
+- **Selección de momentos.** Sin Clipspeed, encontrar el momento que vale la pena es trabajo manual o de un modelo sobre la transcripción. Es el paso que más tiempo puede costar en la línea de clipping.
 
 ## 5. Pruebas previstas para la Ola 1
 
 | Prueba | Qué se mide |
 |---|---|
-| Un clip con Clipspeed (prueba de US$1) frente a ffmpeg + Whisper | Minutos humanos, calidad de subtítulos, costo |
+| Un clip completo con ffmpeg + Whisper (transcribir, elegir momento, cortar, subtitular) | Minutos humanos por paso, calidad de subtítulos en español |
 | Una pieza explicativa de 45 s con HyperFrames | Minutos humanos, tiempo de render, uso de Claude consumido |
 | Tres estilos de Lemo Opuscar para el primer canal original | Cuál se sostiene con menos retoques |

@@ -75,7 +75,7 @@ socios y las suscripciones ya pagadas (no atribuibles solo al estudio).
 
 **Debilidades**
 - 16 horas semanales para dos líneas de negocio y un portafolio amplio.
-- Sin presupuesto para herramientas de pago; Clipspeed parte en US$19 al mes.
+- Sin presupuesto para herramientas de pago: los clips se hacen con ffmpeg + Whisper, que exige más trabajo manual que un servicio como Clipspeed.
 - División por función: cada socio es punto único de falla.
 - Sin regla de cierre de canales.
 

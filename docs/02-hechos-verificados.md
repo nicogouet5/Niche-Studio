@@ -97,7 +97,7 @@ monetización de la propia cuenta.
 5. **Facebook podría ser una cuarta plataforma** con monetización disponible en Chile.
 6. **El portafolio de canales con plantilla es justo lo que la política de contenido
    inauténtico persigue.** Cada canal necesita variación editorial real.
-7. **Clipspeed rompe el presupuesto de US$0.**
+7. **Clipspeed rompe el presupuesto de US$0.** Decisión tomada: opciones gratuitas por ahora.
 
 ## 8. Páginas oficiales por leer
 

@@ -15,7 +15,8 @@ aparecen como las tomaron los socios; las discrepancias del asesor van aparte.
 | Canales originales | Sin canal principal: portafolio de muchos canales por plataforma, tema e idioma (español e inglés) |
 | Si un canal no rinde | Abrir más canales; no se fija regla de cierre |
 | Ventajas declaradas | Conocimiento de varios nichos (finanzas, streaming/gaming, deportes, tecnología/IA) y habilidad técnica |
-| Herramientas base | Clipspeed, HyperFrames y un catálogo de 11 repositorios (ver `04-herramientas-produccion.md`) |
+| Herramientas base | Solo opciones gratuitas por ahora: ffmpeg + Whisper para clips, HyperFrames y un catálogo de 11 repositorios (ver `04-herramientas-produccion.md`). Clipspeed queda en reserva |
+| Acuerdo entre socios | Por definir (TBD) |
 
 ## 2. Modelo de capacidad
 
@@ -47,11 +48,11 @@ mínimo o se pausan para liberar minutos.
 |---|---|---|
 | 1 | Portafolio grande con 16 h y US$0 | Lanzamiento por olas con la regla de capacidad |
 | 2 | "Validar manual, automatizar después" frente a un portafolio grande | El pipeline propio de costo cero pasa a ser requisito para crecer, pero solo tras cronometrar el proceso manual en la Ola 1 |
-| 3 | Clipspeed es de pago (desde US$19/mes) y el presupuesto es US$0 | Decidir: prueba de US$1, asumir el costo, o reemplazarlo con ffmpeg + Whisper |
+| 3 | Clipspeed es de pago (desde US$19/mes) y el presupuesto es US$0 | **Resuelta (2026-11-12):** se usan opciones gratuitas (ffmpeg + Whisper). Clipspeed se reevalúa cuando haya ingresos que lo paguen |
 | 4 | Clips directos sin autorización y material de noticieros | Riesgo asumido por los socios; se aísla en cuentas separadas y se registra por pieza |
 | 5 | YouTube no monetiza clips reutilizados ni siquiera con permiso | El canal de clipping vive del pago por vista de las campañas, no de los anuncios |
 | 6 | División por función: si un socio falta, se detiene todo | SOP escrito de cada función y colchón de piezas programadas |
-| 7 | Reparto de ingresos y titularidad de cuentas sin acordar | Pendiente de los socios antes de publicar |
+| 7 | Reparto de ingresos y titularidad de cuentas sin acordar | Por definir (TBD); debe cerrarse antes del primer ingreso |
 
 ## 4. Discrepancias del asesor (registradas, no impuestas)
 
@@ -71,6 +72,5 @@ mínimo o se pausan para liberar minutos.
 
 ## 6. Pendientes de los socios
 
-1. Acuerdo de reparto de ingresos y titularidad de las cuentas.
-2. Decisión sobre Clipspeed (tensión 3).
-3. Tema del primer canal original (se propondrá con el scoring del Módulo 2).
+1. Acuerdo de reparto de ingresos y titularidad de las cuentas (TBD).
+2. Tema del primer canal original (se propondrá con el scoring del Módulo 2).
