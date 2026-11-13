@@ -7,7 +7,7 @@
 *Marcas descentralizadas · Operaciones centralizadas*
 
 ![Estado](https://img.shields.io/badge/estado-Ola%200%20·%20Fundamentos-blue)
-![Módulos](https://img.shields.io/badge/módulos-4%20de%2010%20iniciados-orange)
+![Módulos](https://img.shields.io/badge/módulos-6%20de%2010%20iniciados-orange)
 ![Presupuesto](https://img.shields.io/badge/herramientas-100%25%20gratuitas-brightgreen)
 ![Plataformas](https://img.shields.io/badge/plataformas-YouTube%20·%20TikTok%20·%20Instagram-lightgrey)
 
@@ -25,24 +25,39 @@ infraestructura compartida. Tiene dos líneas de negocio que se miden por separa
 
 | | ✂️ Línea A · Clipping | 🎨 Línea B · Faceless original |
 |---|---|---|
-| **Qué produce** | Clips de streams y contenido de terceros | Piezas con guion y visuales propios |
-| **Quién paga** | Streamers y marcas, por vista, en campañas | Plataforma, afiliados y patrocinios |
-| **Activo que construye** | Oficio y relaciones | Marca y audiencia propias |
+| **Qué produce** | Clips de streamers y de noticias, con formato propio | Piezas con guion y visuales propios |
+| **Cómo trabaja** | Reactivo: cazar, cortar, dar formato, entregar | Proactivo: diseñar, producir, construir audiencia |
+| **Agentes** | 5 y una puerta humana | 9 y cuatro puertas humanas |
+| **Ingreso** | Por validar: tráfico, campañas opcionales | Plataforma, afiliados y patrocinios |
 
 ## 🔄 Cómo funciona
 
+Son dos flujos distintos, no un pipeline con dos configuraciones.
+
+**✂️ Clipping**
+
 ```mermaid
 flowchart LR
-    F0[("📦 Fase 0<br/>Ingesta y<br/>registro de derechos")] --> F1["🔎 Fase 1<br/>Investigación<br/>y scoring"]
-    F1 --> F2["🎞️ Fase 2<br/>Producción"]
-    F2 --> R1{{"👤 Revisión<br/>humana"}}
-    R1 --> F3["📤 Fase 3<br/>Distribución"]
-    F3 --> F4["📊 Fase 4<br/>Analítica y<br/>aprendizaje"]
-    F4 -. nuevas ideas .-> F1
+    A1["🎮 Cazador de<br/>streamers"] --> M["⛏️ Minero de<br/>momentos"]
+    A2["📰 Cazador de<br/>noticias"] --> M
+    M --> E["✂️ Cortador-editor<br/>formato propio"]
+    E --> F["🤝 Facilitador"]
+    F --> G{{"👤 Decisión<br/>humana"}}
+    G --> P["📤 Publicación"]
 ```
 
-En esta etapa cada fase es un procedimiento manual asistido por IA. Un paso se convierte en
-agente autónomo solo después de repetirse con resultado estable.
+**🎨 Contenido propio**
+
+```mermaid
+flowchart LR
+    B["🧭 Biblia<br/>del canal"] --> T["🔎 Temas"] --> GU["✍️ Datos<br/>y guion"] --> AR["🎨 Dirección<br/>de arte"]
+    AR --> R{"Familia de<br/>estilo A–G"}
+    R --> MO["🎞️ Motion<br/>y render"] --> LO["🌎 Localización<br/>y empaque"] --> PU["📤 Publicación"] --> AN["📊 Analítica"]
+    AN -.-> T
+```
+
+Cada agente es hoy un rol con contrato que ejecuta una persona con un prompt o un script.
+Se automatiza solo después de repetirse con resultado estable.
 
 ## 📚 Documentos
 
@@ -53,6 +68,9 @@ agente autónomo solo después de repetirse con resultado estable.
 | 02 | [Hechos verificados](docs/02-hechos-verificados.md) | Monetización y políticas por plataforma, con fuente y nivel de confianza |
 | 03 | [Gobernanza mínima](docs/03-governance-minimo.md) | Reglas, niveles de riesgo, registro de derechos, control previo a publicar |
 | 04 | [Herramientas de producción](docs/04-herramientas-produccion.md) | Catálogo y guía "qué video → qué herramienta" |
+| 05 | [SOP · Base compartida](docs/05-sop/00-base-compartida.md) | Por qué hay dos flujos, niveles de automatización, archivos, ClickUp |
+| 05 | [SOP · Flujo de clipping](docs/05-sop/01-flujo-clipping.md) | Cazadores, Minero, Cortador-editor con formato propio, Facilitador |
+| 05 | [SOP · Flujo de contenido propio](docs/05-sop/02-flujo-contenido-original.md) | Nueve agentes y enrutamiento por familia de estilo (A–G) |
 
 ## 🗺️ Hoja de ruta por olas
 
@@ -70,8 +88,8 @@ agente autónomo solo después de repetirse con resultado estable.
 | 1 | Business Blueprint | 🟢 Primera versión |
 | 2 | Channel Strategy | ⚪ Siguiente |
 | 3 | Operating Model | ⚪ Pendiente |
-| 4 | AI Agent Architecture | ⚪ Pendiente (último, a propósito) |
-| 5 | Content Production SOP | ⚪ Pendiente |
+| 4 | AI Agent Architecture | 🟡 Parcial: agentes definidos en el SOP, sin automatizar |
+| 5 | Content Production SOP | 🟢 Primera versión |
 | 6 | Technology Stack | 🟡 Parcial: catálogo de producción |
 | 7 | Financial Model | ⚪ Pendiente |
 | 8 | Performance Framework | ⚪ Pendiente |

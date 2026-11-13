@@ -11,7 +11,9 @@ aparecen como las tomaron los socios; las discrepancias del asesor van aparte.
 | Equipo | 2 socios, ~8 h semanales cada uno (16 h totales) |
 | División del trabajo | Por función (uno investiga y guioniza; el otro edita y publica) |
 | Presupuesto | US$0 adicional. Solo lo ya contratado: Claude Pro (2 cuentas; 1 desde diciembre), ChatGPT Plus, Google AI Pro |
-| Fuente de clips | Campañas que pagan por clip + clips directos de streamers y de noticias locales |
+| Fuente de clips | Sobre todo clips propios de streamers y de noticias de actualidad, resubidos con formato propio para ganar visitas. Las campañas pagadas son opcionales (actualizado 2026-11-13) |
+| Flujos de trabajo | Dos flujos distintos, uno por línea, ejecutados por agentes (ver `05-sop/`) |
+| Equipos | Mac M1 y PC con GPU; cualquier herramienta se usa en cualquiera |
 | Canales originales | Sin canal principal: portafolio de muchos canales por plataforma, tema e idioma (español e inglés) |
 | Si un canal no rinde | Abrir más canales; no se fija regla de cierre |
 | Ventajas declaradas | Conocimiento de varios nichos (finanzas, streaming/gaming, deportes, tecnología/IA) y habilidad técnica |
@@ -50,14 +52,15 @@ mínimo o se pausan para liberar minutos.
 | 2 | "Validar manual, automatizar después" frente a un portafolio grande | El pipeline propio de costo cero pasa a ser requisito para crecer, pero solo tras cronometrar el proceso manual en la Ola 1 |
 | 3 | Clipspeed es de pago (desde US$19/mes) y el presupuesto es US$0 | **Resuelta (2026-11-12):** se usan opciones gratuitas (ffmpeg + Whisper). Clipspeed se reevalúa cuando haya ingresos que lo paguen |
 | 4 | Clips directos sin autorización y material de noticieros | Riesgo asumido por los socios; se aísla en cuentas separadas y se registra por pieza |
-| 5 | YouTube no monetiza clips reutilizados ni siquiera con permiso | El canal de clipping vive del pago por vista de las campañas, no de los anuncios |
+| 5 | YouTube no monetiza clips reutilizados ni siquiera con permiso, y el clipping será sobre todo por visitas | Cómo se convierten las visitas en ingreso es una hipótesis a medir en la Ola 1 (ver `05-sop/01-flujo-clipping.md`, sección 6) |
 | 6 | División por función: si un socio falta, se detiene todo | SOP escrito de cada función y colchón de piezas programadas |
 | 7 | Reparto de ingresos y titularidad de cuentas sin acordar | Por definir (TBD); debe cerrarse antes del primer ingreso |
 
 ## 4. Discrepancias del asesor (registradas, no impuestas)
 
 - Recomendé un solo canal al inicio; los socios eligieron dos modelos en paralelo.
-- Recomendé clipping solo dentro de campañas autorizadas; los socios incluyen clips directos.
+- Recomendé clipping solo dentro de campañas autorizadas; los socios harán sobre todo clips
+  directos resubidos por visitas.
 - Recomendé un pivote único y cierre a 60 días; los socios prefieren abrir más canales.
 - Recomendé finanzas como primer nicho original; los socios dejan el tema abierto al scoring.
 

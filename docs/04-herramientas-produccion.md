@@ -55,32 +55,52 @@ medirán en la Ola 1.
 
 ## 2. Guía de selección: qué video, qué herramienta
 
+### Clipping
+
 | Tipo de pieza | Herramienta principal | Apoyo | Esfuerzo |
 |---|---|---|---|
-| Clip de stream subtitulado | ffmpeg + Whisper | HyperFrames para título o marco | Bajo–medio |
-| Clip con contexto (título, dato, reacción escrita) | HyperFrames | ffmpeg + Whisper para el corte | Medio |
-| Explicativo con gráficos 2D y texto animado | HyperFrames | Lemo Opuscar para el estilo; bibliotecas de prompts | Medio |
-| Datos, rankings, comparativas (finanzas, deportes) | HyperFrames | librosa si va al ritmo de la música | Medio |
-| Promocional o reseña de producto | Video ShotCraft | librosa | Medio |
-| Estética retro o gamer | pixelfx | HyperFrames para componer | Bajo–medio |
-| Historia con personaje animado | Claude Animation Base | Personaje propio | Alto |
-| Escena 3D en navegador (objetos, física, simulaciones) | Three.js + React Three Rapier | React Postprocessing | Alto |
-| 3D realista o cinematográfico | Blender MCP | — | Muy alto |
-| Pieza sincronizada con música | librosa + HyperFrames | Video ShotCraft | Medio |
-| Sin idea de estilo todavía | Bibliotecas de prompts y Lemo Opuscar | — | Solo exploración |
+| Clip de streamer o de noticia con el formato del canal | ffmpeg + Whisper | librosa para ubicar picos de audio | Bajo–medio |
+| Plantilla animada del canal (fondo, marco, título) | HyperFrames | Se construye una vez y se reutiliza | Medio, una sola vez |
+
+Detalle en [`05-sop/01-flujo-clipping.md`](05-sop/01-flujo-clipping.md).
+
+### Contenido propio: familias de estilo
+
+Cada canal original fija una familia principal; de ella sale la herramienta.
+
+| Familia | Cómo se ve | Herramienta motor | Apoyo | Esfuerzo |
+|---|---|---|---|---|
+| A · Explicativo y datos | Tipografía cinética, gráficos, rankings | HyperFrames (`/style-sampling` y bloques del registro) | librosa | Medio |
+| B · Cinematográfico por estilo | Acuarela, neón, noticiero, collage | Lemo Opuscar | Bibliotecas de prompts | Medio–alto |
+| C · 8 bits / pixel / gamer | Pixel art y efectos de videojuego | pixelfx, compuesto en HyperFrames | librosa | Bajo–medio |
+| D · Personaje animado | Dibujo pintado a mano con personaje | Claude Animation Base, con personaje propio | — | Alto |
+| E · 3D en navegador | Objetos, física, simulaciones | Three.js + React Three Rapier + React Postprocessing | — | Alto |
+| F · 3D realista | Escenas cinematográficas | Blender MCP | — | Muy alto |
+| G · Promo de producto | Capturas reales animadas al ritmo | Video ShotCraft | librosa | Medio |
+
+Cómo elegir la familia y los pasos de cada rama:
+[`05-sop/02-flujo-contenido-original.md`](05-sop/02-flujo-contenido-original.md).
 
 ## 3. Cómo elegir
 
-1. **Línea A (clipping):** corte + subtítulos + marco. No usar 3D ni animación: el tiempo
-   por pieza manda.
-2. **Línea B (original):** empezar con HyperFrames y un estilo de Lemo Opuscar. Es la
-   combinación de menor esfuerzo que da identidad visual propia.
-3. **Un estilo por canal.** El estilo elegido se fija en la guía del canal y no se comparte
-   con otro, para cumplir la regla 16 de gobernanza.
-4. **3D y Blender solo con motivo.** Se justifican si el formato del canal depende de ello y
-   la capacidad lo permite.
-5. **Costo por pieza.** Los estilos de esfuerzo alto solo caben en canales de baja
-   frecuencia.
+1. **Clipping:** corte + subtítulos + formato del canal. Sin 3D ni animación compleja: el
+   tiempo por pieza manda.
+2. **Contenido propio:** empezar por la familia A o B, que dan identidad visual con el menor
+   esfuerzo.
+3. **Una familia y un estilo por canal**, fijados en su biblia y no compartidos con otro
+   canal (regla 16 de gobernanza).
+4. **Familias D, E y F solo con motivo:** canales de baja frecuencia o piezas insignia.
+5. **Probar antes de adoptar:** una pieza de prueba con el tiempo anotado.
+
+### Notas de instalación (según los README, sin probar aún)
+
+| Herramienta | Cómo se usa con Claude Code |
+|---|---|
+| HyperFrames | `claude plugin marketplace add heygen-com/hyperframes` y `claude plugin install hyperframes@hyperframes`; después `/hyperframes:hyperframes`. Trae un registro de unos 450 bloques (transiciones, títulos, subtítulos, gráficos, 3D) |
+| Lemo Opuscar | `claude plugin marketplace add lemomo-ai/lemo-opuscar` y `claude plugin install lemo-opuscar@lemolab`; se pide la película nombrando el estilo. Recomienda esfuerzo alto del modelo |
+| Claude Animation Base | Clonar el repositorio y pedir el video tras leer `ANIMATION_GUIDE.md`. Requiere Node.js, Chrome y ffmpeg; sin tarjeta gráfica dedicada el render es lento |
+| Video ShotCraft | `npx skills add Vincentwei1021/video-shotcraft` |
+| pixelfx | Biblioteca sin dependencias; incluye un skill para crear efectos nuevos |
 
 ## 4. Advertencias
 

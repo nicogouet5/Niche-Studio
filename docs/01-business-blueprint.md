@@ -50,6 +50,11 @@ cuentas.
 **[R]** Durante los primeros 90 días, el único ingreso que conviene presupuestar es la vía 1.
 Las demás son opciones a construir.
 
+**Actualización 2026-11-13.** Los socios decidieron que el clipping será sobre todo de
+clips propios resubidos por visitas, con las campañas como vía opcional. Con eso, ninguna
+vía de ingreso queda asegurada para los primeros 90 días: la conversión de visitas en
+ingreso pasa a ser la principal hipótesis a validar.
+
 ## 5. Economía unitaria (ilustrativa)
 
 Supuestos: US$1 por mil vistas, comisión de 10%, pago mínimo y topes por campaña ignorados.
