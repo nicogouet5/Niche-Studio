@@ -97,20 +97,20 @@ El identificador es el mismo en Drive, en ClickUp y en el registro de derechos d
 
 ## 4. ClickUp
 
-Estado actual del espacio "Niche": carpeta 🎬 Niche Studio (listas Ideas y 🗺️ Misiones ·
-Roadmap, subcarpeta AGENTES), carpeta 🎵 TikTok y carpeta ▶️ YouTube, cada una con listas
+Espacio "Niche": carpeta 🎬 Niche Studio (listas Ideas, 🗺️ Misiones · Roadmap y las dos
+listas de pipeline; subcarpeta AGENTES), carpeta 🎵 TikTok y carpeta ▶️ YouTube, cada una con listas
 por idioma.
 
-Estructura propuesta (aún no creada):
+Listas de pipeline (creadas el 2026-11-13 en la carpeta 🎬 Niche Studio):
 
-| Lista | Dónde | Estados |
+| Lista | Estados | Campos |
 |---|---|---|
-| ✂️ Pipeline Clipping | 🎬 Niche Studio | Detectado → Momentos → Editado → Entregado → Aprobado G1 → Publicado → Medido |
-| 🎨 Pipeline Original | 🎬 Niche Studio | Idea → Puntuada → G1 → Investigación → Guion → G2 → Arte → Motion → Render → G3 → Localizado → Programado → Publicado → Medido |
-| Fichas de agente | Subcarpeta AGENTES | Un documento por agente con su prompt vigente |
+| [✂️ Pipeline Clipping](https://app.clickup.com/1600330000004548/v/l/li/1600330000028262) | Detectado → Momentos → Editado → Entregado → Aprobado G1 → Publicado → Medido | Carril, Fuente, Canal, Puntaje, Nivel de riesgo, Sensibilidad, Minutos de trabajo |
+| [🎨 Pipeline Original](https://app.clickup.com/1600330000004548/v/l/li/1600330000028263) | Idea → Puntuada → G1 Temas → Investigación → Guion → G2 Guion → Arte → Motion → Render → G3 Corte final → Localizado → Programado → Publicado → Medido | Familia de estilo, Mercado, Canal, Puntaje, Minutos de trabajo |
 
-Campos personalizados sugeridos: canal, carril (streamers, noticias, campaña), fuente,
-puntaje, prioridad, nivel de riesgo, familia de estilo, plataforma, minutos de trabajo.
+Cada tarea es un clip o una pieza y lleva su identificador en el nombre. La prioridad usa el
+campo nativo de ClickUp. Pendiente: una vista de tablero por lista y un documento por agente
+en la subcarpeta AGENTES con su prompt vigente.
 
 Dos observaciones sobre la estructura actual:
 
