@@ -9,6 +9,7 @@ configuraciones: parten de cosas diferentes, tienen agentes diferentes y se mide
 |---|---|
 | [`01-flujo-clipping.md`](01-flujo-clipping.md) | ✂️ Clipping: cazar, cortar, dar formato, entregar |
 | [`02-flujo-contenido-original.md`](02-flujo-contenido-original.md) | 🎨 Contenido propio: diseñar, producir, construir audiencia |
+| [`03-modus-operandi.md`](03-modus-operandi.md) | Manual operativo: herramientas por agente, runbook de cada flujo, ubicaciones en Drive |
 
 ## 1. Por qué son dos sistemas
 

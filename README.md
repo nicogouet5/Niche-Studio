@@ -71,6 +71,7 @@ Se automatiza solo después de repetirse con resultado estable.
 | 05 | [SOP · Base compartida](docs/05-sop/00-base-compartida.md) | Por qué hay dos flujos, niveles de automatización, archivos, ClickUp |
 | 05 | [SOP · Flujo de clipping](docs/05-sop/01-flujo-clipping.md) | Cazadores, Minero, Cortador-editor con formato propio, Facilitador |
 | 05 | [SOP · Flujo de contenido propio](docs/05-sop/02-flujo-contenido-original.md) | Nueve agentes y enrutamiento por familia de estilo (A–G) |
+| 05 | [SOP · Modus operandi](docs/05-sop/03-modus-operandi.md) | Herramientas por agente, runbook de cada flujo, ubicaciones en Drive |
 
 ## 🗺️ Hoja de ruta por olas
 
