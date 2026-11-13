@@ -109,8 +109,21 @@ Listas de pipeline (creadas el 2026-11-13 en la carpeta 🎬 Niche Studio):
 | [🎨 Pipeline Original](https://app.clickup.com/1600330000004548/v/l/li/1600330000028263) | Idea → Puntuada → G1 Temas → Investigación → Guion → G2 Guion → Arte → Motion → Render → G3 Corte final → Localizado → Programado → Publicado → Medido | Familia de estilo, Mercado, Canal, Puntaje, Minutos de trabajo |
 
 Cada tarea es un clip o una pieza y lleva su identificador en el nombre. La prioridad usa el
-campo nativo de ClickUp. Pendiente: una vista de tablero por lista y un documento por agente
-en la subcarpeta AGENTES con su prompt vigente.
+campo nativo de ClickUp. Pendiente: una vista de tablero por lista.
+
+Documentos creados el 2026-11-13 (diagramas en texto, porque ClickUp no dibuja Mermaid; la
+fuente de verdad sigue siendo este repositorio):
+
+| Documento | Dónde | Contenido |
+|---|---|---|
+| [✂️ Agentes · Clipping](https://app.clickup.com/1600330000004548/docs/1dffqejrxe4-377) | Carpeta AGENTES | Mapa del flujo y una página por agente (C1a, C1b, C2, C3, C4) |
+| [🎨 Agentes · Contenido propio](https://app.clickup.com/1600330000004548/docs/1dffqejrxe4-397) | Carpeta AGENTES | Mapa del flujo y una página por agente (O1–O9) |
+| [Flujo · Clipping](https://app.clickup.com/1600330000004548/docs/1dffqejrxe4-417) | Lista ✂️ Pipeline Clipping | Estados, campos, reglas y checklist G1 |
+| [Flujo · Contenido propio](https://app.clickup.com/1600330000004548/docs/1dffqejrxe4-437) | Lista 🎨 Pipeline Original | Estados, ruta por familia de estilo, cadencia |
+
+ClickUp no permite carpetas dentro de carpetas, así que la separación por tipo de flujo en
+AGENTES se hizo con un documento por flujo y una subpágina por agente. Si se edita un prompt
+en ClickUp, hay que reflejarlo aquí.
 
 Dos observaciones sobre la estructura actual:
 
